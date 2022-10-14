@@ -1,0 +1,30 @@
+[2022-10-12T17:58:18.001] [ERROR] error - ER_ACCESS_DENIED_ERROR: Access denied for user 'mygoes'@'localhost' (using password: YES)
+[2022-10-12T18:11:53.884] [ERROR] error - Error: getaddrinfo ENOTFOUND http://43.138.252.217
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\chart.js:16:26
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\chart.js:14:3
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'http://43.138.252.217',
+  fatal: true
+}
+[2022-10-12T18:13:27.412] [ERROR] error - getaddrinfo ENOTFOUND http://43.138.252.217
+[2022-10-12T18:14:16.929] [ERROR] error - Handshake inactivity timeout
+[2022-10-12T18:16:22.461] [ERROR] error - Handshake inactivity timeout
+[2022-10-12T18:18:25.090] [ERROR] error - Handshake inactivity timeout
+[2022-10-12T18:19:28.062] [ERROR] error - Handshake inactivity timeout
+[2022-10-12T18:28:18.678] [ERROR] error - Handshake inactivity timeout

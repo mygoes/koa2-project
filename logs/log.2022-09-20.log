@@ -1,0 +1,3 @@
+[2022-09-20T10:26:40.530] [ERROR] error - Bad "options.expiresIn" option the payload already has an "exp" property.
+[2022-09-20T10:27:34.814] [ERROR] error - Bad "options.expiresIn" option the payload already has an "exp" property.
+[2022-09-20T10:28:03.465] [ERROR] error - Bad "options.expiresIn" option the payload already has an "exp" property.

@@ -1,0 +1,2 @@
+[2022-10-03T18:29:26.694] [ERROR] error - ER_NO_DEFAULT_FOR_FIELD: Field 'note' doesn't have a default value
+[2022-10-03T18:29:29.422] [ERROR] error - ER_NO_DEFAULT_FOR_FIELD: Field 'note' doesn't have a default value

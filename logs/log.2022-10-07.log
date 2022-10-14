@@ -1,0 +1,1499 @@
+[2022-10-07T09:34:03.972] [ERROR] error - Cannot read properties of undefined (reading 'avatar')
+[2022-10-07T09:34:28.368] [ERROR] error - Cannot read properties of undefined (reading 'avatar')
+[2022-10-07T09:34:53.160] [ERROR] error - Cannot read properties of undefined (reading 'avatar')
+[2022-10-07T10:38:04.603] [ERROR] error - Error: ER_OPERAND_COLUMNS: Operand should contain 1 column(s)
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_OPERAND_COLUMNS',
+  errno: 1241,
+  sqlMessage: 'Operand should contain 1 column(s)',
+  sqlState: '21000',
+  index: 0,
+  sql: 'select (username,avatar) from user where id=102'
+}
+[2022-10-07T11:09:33.296] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (102,'110','110')"
+}
+[2022-10-07T11:09:44.103] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (102,'110','110')"
+}
+[2022-10-07T15:48:32.015] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (104,'undefined','哈哈')"
+}
+[2022-10-07T15:48:42.320] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (104,'undefined','啊啊')"
+}
+[2022-10-07T15:51:06.556] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (104,'undefined','啊啊')"
+}
+[2022-10-07T15:52:01.368] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (105,'undefined','啊啊啊')"
+}
+[2022-10-07T15:52:24.563] [ERROR] error - Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content, avatar) values (105,'undefined','啊啊啊')"
+}
+[2022-10-07T15:53:57.529] [ERROR] error - ReferenceError: avatar is not defined
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:123:132
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:108:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:33:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+[2022-10-07T15:54:17.034] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content) values (105,'undefined','啊啊啊'))"
+}
+[2022-10-07T15:55:29.030] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, user_name, content) values (105,'undefined','啊啊啊'))"
+}
+[2022-10-07T15:56:11.050] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, content) values (105,'啊啊啊'))"
+}
+[2022-10-07T15:57:50.633] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, content) values (105,'啊啊啊啊'))"
+}
+[2022-10-07T15:59:49.232] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, content) values (105,'啊啊'))"
+}
+[2022-10-07T16:01:25.436] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "insert into message (user_id, content) values (105,'啊啊'))"
+}
+[2022-10-07T20:03:13.794] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id limit 0,10;select found_rows() as total' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id limit 0,10;select found_rows() as total' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'select sql_calc_found_rows * from user,message order by create_time desc where user.id=message.user_id limit 0,10;select found_rows() as total'
+}
+[2022-10-07T20:04:42.823] [ERROR] error - Error: ER_NON_UNIQ_ERROR: Column 'create_time' in order clause is ambiguous
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'create_time' in order clause is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: 'select sql_calc_found_rows * from user,message where user.id=message.user_id order by create_time desc limit 0,10;select found_rows() as total'
+}
+[2022-10-07T20:09:15.198] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id limit 0,10;select found_rows() as total' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id limit 0,10;select found_rows() as total' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'select sql_calc_found_rows * from user,message order by create_time desc where user.id=message.user_id limit 0,10;select found_rows() as total'
+}
+[2022-10-07T20:11:26.703] [ERROR] error - Error: ER_NON_UNIQ_ERROR: Column 'create_time' in order clause is ambiguous
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'create_time' in order clause is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: 'select sql_calc_found_rows * from message,user order by create_time desc limit 0,10;select found_rows() as total where user.id=message.user_id '
+}
+[2022-10-07T20:12:01.770] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id' at line 1",
+  sqlState: '42000',
+  index: 1,
+  sql: 'select sql_calc_found_rows * from message,user order by message.create_time desc limit 0,10;select found_rows() as total where user.id=message.user_id '
+}
+[2022-10-07T20:12:48.605] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Handshake.onConnect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where user.id=message.user_id' at line 1",
+  sqlState: '42000',
+  index: 1,
+  sql: 'select sql_calc_found_rows * from message,user order by message.create_time desc limit 0,10;select found_rows() as total where user.id=message.user_id'
+}
+[2022-10-07T20:24:31.434] [ERROR] error - Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))',
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into reply (message_id, content, user_id, target_id, reply_type, father_id) values (107,'O(∩_∩)O哈哈~',105,107,'1',107)"
+}
+[2022-10-07T20:26:14.002] [ERROR] error - Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))',
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into reply (message_id, content, user_id, target_id, reply_type, father_id) values (107,'O(∩_∩)O哈哈~',105,107,'1',107)"
+}
+[2022-10-07T20:42:49.982] [ERROR] error - Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))',
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into reply (message_id, content, user_id, target_id, reply_type, father_id) values (107,'666',105,107,'1',107)"
+}
+[2022-10-07T20:44:00.472] [ERROR] error - Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))',
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into reply (message_id, content, user_id, target_id, reply_type, father_id) values (107,'666',105,107,'1',107)"
+}
+[2022-10-07T21:01:32.387] [ERROR] error - Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`koa2`.`reply`, CONSTRAINT `fk_reply_message` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`))',
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into reply (message_id, content, user_id, target_id, reply_type, father_id) values (107,'666666',105,107,'1',107)"
+}
+[2022-10-07T22:25:58.047] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as target_id_found;(select user_id from reply where target_id_found.target_id=id' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as target_id_found;(select user_id from reply where target_id_found.target_id=id' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "(select target_id from reply where reply_type='2')as target_id_found;(select user_id from reply where target_id_found.target_id=id) as user_id_found;select username from user where id=user_id_found;"
+}
+[2022-10-07T22:41:46.542] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;
+        select user_id from reply where res1.target_id=id as res2' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;\n" +
+    "        select user_id from reply where res1.target_id=id as res2' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select target_id from reply where reply_type='2' as res1;\n" +
+    '        select user_id from reply where res1.target_id=id as res2;'
+}
+[2022-10-07T22:42:37.817] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;
+        select user_id from reply where res1.target_id=id as res2' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;\n" +
+    "        select user_id from reply where res1.target_id=id as res2' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "(select target_id from reply where reply_type='2') as res1;\n" +
+    '        select user_id from reply where res1.target_id=id as res2;'
+}
+[2022-10-07T22:43:18.601] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;(select user_id from reply where res1.target_id=id) as res2' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as res1;(select user_id from reply where res1.target_id=id) as res2' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "(select target_id from reply where reply_type='2') as res1;(select user_id from reply where res1.target_id=id) as res2;"
+}
+[2022-10-07T22:52:58.975] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select * from (select sql_calc_found_rows * from user,reply where (reply.father_id=45 and reply.user_id=user.id) limit 0,10;select found_rows() as total)as res,(select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res2 where res.user_id=res2.user_id"
+}
+[2022-10-07T22:54:33.518] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select * from (select sql_calc_found_rows * from user,reply where (reply.father_id=45 and reply.user_id=user.id) limit 0,10;select found_rows() as total)as res,(select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res2 where res.user_id=res2.user_id"
+}
+[2022-10-07T22:57:00.986] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';select found_rows() as total)as res,(select user_id from (select target_id from' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select * from (select sql_calc_found_rows * from user,reply where (reply.father_id=45 and reply.user_id=user.id) limit 0,10;select found_rows() as total)as res,(select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res2 where res.user_id=res2.user_id"
+}
+[2022-10-07T23:04:10.116] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select user_id from (select target_id from reply where reply_type='2')as target' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: `You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select user_id from (select target_id from reply where reply_type='2')as target' at line 1`,
+  sqlState: '42000',
+  index: 0,
+  sql: `select username from ("select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id")as res1,("select username from user")as res2 where res1.user_id=res2.username`
+}
+[2022-10-07T23:06:39.965] [ERROR] error - Error: ER_BAD_FIELD_ERROR: Unknown column 'res2.id' in 'where clause'
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'res2.id' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "select username from (select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res1,(select username from user)as res2 where res2.id=res1.user_id"
+}
+[2022-10-07T23:21:18.126] [ERROR] error - Error: ER_NON_UNIQ_ERROR: Column 'id' in field list is ambiguous
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'id' in field list is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: "select id,user_id from (select id,target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id"
+}
+[2022-10-07T23:29:57.542] [ERROR] error - Error: ER_NON_UNIQ_ERROR: Column 'id' in field list is ambiguous
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'id' in field list is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: "select id,username from (select id,user_id from (select id,target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res1,(select id,username from user)as res2 where res2.id=res1.user_id"
+}
+[2022-10-07T23:36:24.731] [ERROR] error - Error: ER_NON_UNIQ_ERROR: Column 'id' in field list is ambiguous
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'id' in field list is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: "select id,user_id from (select id,target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id"
+}
+[2022-10-07T23:49:06.093] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=user_id_all.' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=user_id_all.' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select * from (select username from (select target_id_found.id,user_id from (select id,target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res1,(select id,username from user)as res2 where res2.id=res1.user_id)as user_id_all,(select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as result_all where result_all.=user_id_all."
+}
+[2022-10-07T23:50:09.448] [ERROR] error - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=user_id_all.' at line 1
+    at Query.Sequence._packetToError (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:198:25)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:11:20
+    at Ping.onOperationComplete (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Ping._callback (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:488:16)
+    at Ping.Sequence.end (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=user_id_all.' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "select * from (select username from (select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as res1,(select id,username from user)as res2 where res2.id=res1.user_id)as user_id_all,(select user_id from (select target_id from reply where reply_type='2')as target_id_found,(select id,user_id from reply)as user_id_found where target_id_found.target_id=user_id_found.id)as result_all where result_all.=user_id_all."
+}

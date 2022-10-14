@@ -1,0 +1,4 @@
+[2022-10-10T05:07:57.441] [ERROR] error - id is not defined
+[2022-10-10T05:08:20.751] [ERROR] error - ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+[2022-10-10T05:10:14.366] [ERROR] error - ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+[2022-10-10T05:22:33.102] [ERROR] error - ER_BAD_FIELD_ERROR: Unknown column 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTEiLCJpYXQiOjE2NjUzNTA1NTMsImV4cCI6MTY2NTM1Nzc1M30.DMapiD0LVAgJZ9WB6cZLGSn9p0pEvBTY4jE1gZkwVxw' in 'field list'

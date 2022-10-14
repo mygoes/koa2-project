@@ -1,0 +1,258 @@
+[2022-10-13T15:46:33.278] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:279:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:276:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:47:12.454] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:279:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:276:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:48:17.115] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:347:31
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:325:5 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:50:02.863] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:347:31
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:325:5 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:51:43.958] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:428:31
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:406:5 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:52:08.825] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:279:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:276:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:53:02.573] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:55:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:45:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:53:02.586] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:248:26
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\message.js:246:3
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:53:05.208] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:279:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:276:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:53:31.202] [ERROR] error - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:409:13)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    --------------------
+    at Protocol._enqueue (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:8:10
+    at new Promise (<anonymous>)
+    at query (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\utils\query.js:7:10)
+    at D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:279:28
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\routes\user.js:276:5
+    at async D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\app.js:38:3
+    at async serve (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-static\index.js:53:9)
+    at async logger (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\MyNam\Documents\Code\study\Koa2\3-前后端\2-后端模块\koa2-project\node_modules\koa2-cors\dist\index.js:91:9) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2022-10-13T15:55:34.521] [ERROR] error - connect ETIMEDOUT
+[2022-10-13T15:56:51.343] [ERROR] error - connect ETIMEDOUT
+[2022-10-13T15:58:14.582] [ERROR] error - connect ETIMEDOUT
