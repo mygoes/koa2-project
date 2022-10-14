@@ -1,3 +1,5 @@
+这是一个主要使用 node.js+koa2+mysql 写成的后端项目，配套的前端代码：https://github.com/mygoes/vue3-ts-project
+
 # koa2 脚手架 koa-generator 使用
 
 1. 全局安装 koa-generatornpm：
