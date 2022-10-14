@@ -1,4 +1,4 @@
-这是一个主要使用 node.js + koa2 + mysql 写成的后端项目，配套的前端代码：https://github.com/mygoes/vue3-ts-project ，项目的展示地址：http://superman666.com
+这是一个主要使用 node.js + koa2 + mysql 写成的后端项目，配套的前端代码：https://github.com/mygoes/vue3-ts-project ，项目的演示地址：http://superman666.com
 
 # koa2 脚手架 koa-generator 使用
 
