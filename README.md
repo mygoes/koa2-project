@@ -8,6 +8,12 @@
 
 遇到的一些 bug：https://blog.csdn.net/mygoes/article/details/106500712
 
+## 项目使用到的数据库的结构和数据
+
+链接：https://pan.baidu.com/s/1NzHrOJ__f3lVl9d-E_K6CA?pwd=koa2 
+提取码：koa2 
+--来自百度网盘超级会员V5的分享
+
 # koa2 脚手架 koa-generator 使用
 
 1. 全局安装 koa-generatornpm：
